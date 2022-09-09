@@ -15,10 +15,10 @@ before_script:
 
 script:
   - docker --version # print the version for logging
-  - docker build -t cd0354-monolith-to-microservices-project .
-  - docker tag cd0354-monolith-to-microservices-project YOUR_DOCKER_HUB/cd0354-monolith-to-microservices-project:latest
+  - docker build -t monolith-to-microservices-project3 .
+  - docker tag monolith-to-microservices-project3 YOUR_DOCKER_HUB/monolith-to-microservices-project3:latest
 
 # Tasks to perform after the process is successful. Formatting the Docker username and password as below enables you to programmatically log in without having the password exposed in logs.
 after_success:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-  - docker push YOUR_DOCKER_HUB/cd0354-monolith-to-microservices-project
+  - docker push YOUR_DOCKER_HUB/monolith-to-microservices-project3

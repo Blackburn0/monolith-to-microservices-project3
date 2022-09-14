@@ -5,8 +5,8 @@ metadata:
 data:
   POSTGRES_USERNAME: hamzat
   POSTGRES_PASSWORD: sweetmummy
-  POSTGRES_HOST: hamzat.ckvyyycukf48.us-east-1.rds.amazonaws.com
-  POSTGRES_DB: postgres
+  POSTGRES_HOST: hamzat.cxcp2zgovfuv.us-east-1.rds.amazonaws.com
+  POSTGRES_DB: hamzat
   AWS_BUCKET: project3-udacity
   AWS_REGION: us-east-1
   AWS_PROFILE: default

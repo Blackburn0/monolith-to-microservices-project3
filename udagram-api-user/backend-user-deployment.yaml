@@ -18,6 +18,15 @@ spec:
       - name: udagram-api-user
         image: docker.io/hamzatadebayo/udagram-api-user:latest
         imagePullPolicy: Always
+        env:
+          - name: POSTGRES_USERNAME
+            value: "hamzat"
+          - name: POSTGRES_PASSWORD
+            value: "sweetmummy"
+          - name: POSTGRES_HOST
+            value: "hamzat.cxcp2zgovfuv.us-east-1.rds.amazonaws.com"
+          - name: POSTGRES_DB
+            value: "postgres"
         ports:
         - containerPort: 8080
         envFrom:
